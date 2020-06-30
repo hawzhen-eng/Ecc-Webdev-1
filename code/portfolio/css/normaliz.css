@@ -1,3 +1,5 @@
+/*Using MDN: Import normalize.css via the css stylesheet*/
+
 @media print {
     body {
         font-size: 10pt;
