@@ -1,0 +1,51 @@
+/* Mobile Styles */
+
+
+/*
+1. Align the nav link items to the right of the screen
+2. Add whitespace around the nav links
+3. Create a "Hero" component
+4. Add your name and little description about you to the Hero
+5. Add a button that will eventually link to your contact form
+6. Using MDN: Import normalize.css (google it) via the css stylesheet
+*/
+
+* {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav .nav-link {
+    margin-right: 16px;
+}
+
+nav .nav-link:last-of-type {
+    margin-right: 0;
+}
+
+.hero {
+    background: url('https://www.nps.gov/yose/planyourvisit/images/GlacierPointSilhouette-JZamudio-web.jpg?maxwidth=1200&maxheight=1200&autorotate=false');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+    min-height: 33vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 44px;
+}
+
+.button {
+    color: white;
+    background: dodgerblue;
+    padding: 8px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 16px;
+    display: inherit;
+}
