@@ -1,0 +1,23 @@
+body {
+    background-color: lightblue;
+    margin: 20px;
+    padding: 25px 15px;
+    text-align: center;
+}
+
+#todoInput {
+    background-color: blanchedalmond;
+    border-style: double;
+    font-size: 25px;
+    font-style: italic;
+}
+
+input {
+    border: 2px ridge green;
+    display: inline;
+    background-color: yellow;
+}
+
+body li #test:hover {
+    color: red;
+}
