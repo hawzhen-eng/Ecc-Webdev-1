@@ -20,8 +20,9 @@ function calc(num) {
             document.getElementById("total").value = "0";
             break;
         case "℃":
-            firstvalue = parseFloat(total) * 32;
-            total = firstvalue * (5 / 9);
+            firstnum = "";
+            operator = "";
+            total = parseFloat(total) * (5 / 9);
             document.getElementById("total").value = total;
             break;
         case "+/-":
@@ -32,6 +33,7 @@ function calc(num) {
         case "*":
         case "/":
         case "+":
+        case "℃":
             operator = num.trim(); //The trim() method removes whitespace from both ends of a string.
             firstnum = total; // string number
             oper_was_last = true;
@@ -59,6 +61,9 @@ function calc(num) {
                     break;
                 case "%":
                     sum = (parseFloat(firstnum) / 100) * parseFloat(total);
+                    break;
+                case "℃":
+                    sum = parseFloat(total) * ((parseFloat(firstnum) * 32) - 32);
                     break;
                 default:
                     console.error("invalid operation");
