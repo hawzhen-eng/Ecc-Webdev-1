@@ -19,6 +19,11 @@ function calc(num) {
         case "c":
             document.getElementById("total").value = "0";
             break;
+        case "℃":
+            firstvalue = parseFloat(total) * 32;
+            total = firstvalue * (5 / 9);
+            document.getElementById("total").value = total;
+            break;
         case "+/-":
             total = parseFloat(total) * -1; //Only the first number in the string is returned!
             document.getElementById("total").value = total;
@@ -62,6 +67,7 @@ function calc(num) {
             document.getElementById("total").value = sum; // firstnum = sum;
             break;
         default:
+
             // check to see if firstnum has a value,
             // if it does we need to clear total before putting the next number in the box
             if (true === oper_was_last) {
@@ -74,12 +80,7 @@ function calc(num) {
             if (num === '.' && total.includes('.')) {
                 num = "";
             }
-            /*  A: You drank tequila
-                B: You drank bourbon
-                A and (&&) B: you drank both drinks together (mixed)
-                A or (||) B: you drank either tequila or bourbon
-                A or B: you drank both without mixing
-            */
+
             // check to see if there is a value in the total box
             // if there is a value take the existing value and append the new number
             if (total === "0") {
