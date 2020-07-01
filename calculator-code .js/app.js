@@ -22,7 +22,7 @@ function calc(num) {
         case "℃":
             firstnum = "";
             operator = "";
-            total = parseFloat(total) * (5 / 9);
+            total = (parseFloat(total) - 32) * (5 / 9);
             document.getElementById("total").value = total;
             break;
         case "+/-":
@@ -62,9 +62,7 @@ function calc(num) {
                 case "%":
                     sum = (parseFloat(firstnum) / 100) * parseFloat(total);
                     break;
-                case "℃":
-                    sum = parseFloat(total) * ((parseFloat(firstnum) * 32) - 32);
-                    break;
+
                 default:
                     console.error("invalid operation");
                     break;

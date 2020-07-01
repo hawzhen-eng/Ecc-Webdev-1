@@ -1,47 +1,49 @@
 /*@media screen and (min-width: 375px) and (max-width: 667px) {*/
-    
-    body {
-        background-image: url(https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX9509226.jpg);
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        margin: 50px;
-        text-align: center;
-    }
-    
-    input {
-        margin: 15px;
-        padding: 5px;
-        width: 490px;
-        height: 80px;
-        text-align: center;
-        background-color: rgb(100, 20, 31);
-        border: 5px solid blue;
-        font-size: 55px;
-        color: white;
-        text-align: right;
-        border-radius: 50px;
-    }
-    
-    button {
-        margin: 2px;
-        padding: 5px;
-        width: 100px;
-        height: 60px;
-        color: blue;
-        text-align: center;
-        font-size: 30px;
-        font-weight: 600;
-        border: 3px solid black;
-        border-radius: 50px;
-    }
-    
-    button.funcs {
-        background-color: lightsalmon;
-    }
-    
-    button.funcs1 {
-        background-color: rgb(151, 45, 61);
-        color: white;
-    }
+
+body {
+    background-image: url(https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX9509226.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 45px;
+    text-align: left;
+}
+
+input {
+    margin: 5px;
+    padding: 3px;
+    width: 500px;
+    height: 80px;
+    text-align: center;
+    background-color: rgb(100, 20, 31);
+    border: 5px solid lightsalmon;
+    font-size: 55px;
+    color: white;
+    text-align: right;
+    border-radius: 50px;
+}
+
+button {
+    margin: 2px;
+    padding: 5px;
+    width: 100px;
+    height: 60px;
+    color: blue;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    border: 3px solid black;
+    border-radius: 50px;
+}
+
+button.funcs {
+    background-color: lightsalmon;
+}
+
+button.funcs1 {
+    background-color: rgb(151, 45, 61);
+    color: white;
+}
+
+
 }
